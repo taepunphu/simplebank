@@ -18,7 +18,7 @@ func createRandomAccount(t *testing.T) Account {
 	}
 
 	acc, err := testQueries.CreateAccount(context.Background(), arg)
-	require.Nil(t, err)
+	require.NoError(t, err)
 	require.NotEmpty(t, acc)
 
 	require.Equal(t, arg.Owner, acc.Owner)
