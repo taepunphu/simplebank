@@ -1,0 +1,5 @@
+ALTER TABLE IF EXISTS public.accounts DROP CONSTRAINT IF EXISTS accounts_unique;
+
+ALTER TABLE IF EXISTS public.accounts DROP CONSTRAINT IF EXISTS accounts_users_fk;
+
+DROP TABLE IF EXISTS users;
